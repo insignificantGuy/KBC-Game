@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Game
+    </title>
+</head>
+<link rel="stylesheet" href="/game.css">
+
+<body>
+    <section>
+        <span class="heading">
+            Your Score: <%=score %>
+            <br>
+            <%=msg %>
+        </span>
+    </section>
+    <form method="POST">
+        <div class="step" style="display:block;">
+            <span>
+                Q1)World Health day is observed on?
+            </span> <br><input type="radio" name="radioone" class="option" value="3">[A] 3rd April <br>
+            <input type="radio" name="radioone" class="option" value="4">[B] 4th April <br>
+            <input type="radio" name="radioone" class="option" value="5">[C] 5th April <br>
+            <input type="radio" name="radioone" class="option" value="7">[D] 7th April<br>
+            <br>
+        </div>
+        <div class="step" id="second">
+            <span>
+                Q2)Which among the following bodies estimates the national income of India?
+            </span> <br>
+            <input type="radio" name="radiotwo" class="option" value="ea">[A] Office of the Economic Advisor<br>
+            <input type="radio" name="radiotwo" class="option" value="ms">[B] Ministry of Statistics<br>
+            <input type="radio" name="radiotwo" class="option" value="so">[C] Central Statistical Office <br>
+            <input type="radio" name="radiotwo" class="option" value="mf">[D] Ministry of Finance<br>
+            <br>
+        </div>
+        <div class="step" id="third">
+            <span>
+                Q3)The right to constitutional remedies allows Indian citizens to stand up for their
+                rights against anybody even the government of India. Which article says this?
+            </span> <br>
+            <input type="radio" name="radiothree" class="option" value="31">[A] Article 31<br>
+            <input type="radio" name="radiothree" class="option" value="32">[B] Article 32<br>
+            <input type="radio" name="radiothree" class="option" value="33">[C] Article 33<br>
+            <input type="radio" name="radiothree" class="option" value="34">[D] Article 34<br>
+            <br>
+        </div>
+        <div class="step" id="fourth">
+            <span>
+                Q4)What was the original name of Mirabehn, an associate and disciple of Mahatma Gandhi?
+            </span> <br>
+            <input type="radio" name="radiofour" class="option" value="os">[A] Oliver Schriener <br>
+            <input type="radio" name="radiofour" class="option" value="msp">[B] Millie Graham Polock<br>
+            <input type="radio" name="radiofour" class="option" value="ms">[C] Madeline Slade <br>
+            <input type="radio" name="radiofour" class="option" value="mc">[D] Margarate Cousins<br>
+            <br>
+        </div>
+        <div class="step" id="fifth">
+            <span>
+                Q5)For his major role in the development of computer chip ‘Pentium’,
+                which Indian IT expert is called the ‘Father of Pentium’ ?
+            </span> <br>
+            <input type="radio" name="radiofive" class="option" value="ab">[A] Ajay Bhatt<br>
+            <input type="radio" name="radiofive" class="option" value="ac">[B] Anand Chandrasekher<br>
+            <input type="radio" name="radiofive" class="option" value="vd">[C] Vinod Dham<br>
+            <input type="radio" name="radiofive" class="option" value="bp">[D] Biswamohan Pani<br>
+            <br>
+        </div>
+        <div class="step" id="sixth">
+            <span>
+                Q6)Gol Ghar, a beehive shaped structure built in 1786 to store grains for the British Army,
+                is located in which city ?
+            </span> <br>
+            <input type="radio" name="radiosix" class="option" value="b">[A] Bhopal <br>
+            <input type="radio" name="radiosix" class="option" value="p">[B] Patna <br>
+            <input type="radio" name="radiosix" class="option" value="v">[C] Varnasi <br>
+            <input type="radio" name="radiosix" class="option" value="l">[D] Lucknow<br>
+            <br>
+        </div>
+        <div class="step" id="seventh">
+            <span>
+                Q7)What is the name of India’s first nuclear reactor ?
+            </span> <br>
+            <input type="radio" name="radioseven" class="option" value="c">[A] Cirius<br>
+            <input type="radio" name="radioseven" class="option" value="a">[B] Apsara<br>
+            <input type="radio" name="radioseven" class="option" value="d">[C] Dhruva<br>
+            <input type="radio" name="radioseven" class="option" value="k">[D] Kamini<br>
+            <br>
+        </div>
+        <div class="step" id="eight">
+            <span>
+                Q8)Mahatama Gandhi had launched his first Satyagraha in India from which among the following places?
+            </span> <br>
+            <input type="radio" name="radioeight" class="option" value="k">[A] Kheda <br>
+            <input type="radio" name="radioeight" class="option" value="b">[B] Bardoli <br>
+            <input type="radio" name="radioeight" class="option" value="c">[C] Champaran<br>
+            <input type="radio" name="radioeight" class="option" value="s">[D] Sabarmati<br>
+            <br>
+        </div>
+        <div class="step" id="ninth">
+            <span>
+                Q9)Which among the following Indian classical dance form was developed by Siddhendra Yogi from
+                Bhamakalapam dance drama ?
+            </span> <br>
+            <input type="radio" name="radionine" class="option" value="k">[A] Kuchipudi <br>
+            <input type="radio" name="radionine" class="option" value="o">[B] Odissi<br>
+            <input type="radio" name="radionine" class="option" value="y">[C] Yakshagana <br>
+            <input type="radio" name="radionine" class="option" value="kk">[D] Kathkali<br>
+            <br>
+        </div>
+        <div class="step" id="ten">
+            <span>
+                Q10)Which of the following European countries is known as the ‘Land of a thousand lakes’ ?
+            </span> <br>
+            <input type="radio" name="radioten" class="option" value="n">[A] Norway<br>
+            <input type="radio" name="radioten" class="option" value="s">[B] Sweden<br>
+            <input type="radio" name="radioten" class="option" value="f">[C] Finland <br>
+            <input type="radio" name="radioten" class="option" value="e">[D] Estonia<br>
+            <br>
+        </div>
+        <button type="submit" class="check" name="check" value="chk">Check</button>
+    </form>
+</body>
