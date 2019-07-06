@@ -1,0 +1,53 @@
+body{
+    background:#ed782f;
+}
+
+.step{
+    border:2px solid black;
+    font-size:20px;
+    margin:50px;
+    height: 280px;
+    width:90%;
+    padding:2px;
+}
+
+span,.option{
+    color:black;
+    margin:15px;
+    padding:5px;
+}
+
+.check{
+    height: 40px;
+    width: 80px;
+    border-style: none;
+    margin-left:86%;
+    padding:5px;
+    background: #22ED22;
+    font-size:18px;
+    font-family:sans-serif;
+}
+
+.clear{
+    height: 40px;
+    width: 80px;
+    border-style: none;
+    margin-left:3px;
+    padding:5px;
+    background: #22ED22;
+    font-size:18px;
+    font-family:sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100px;
+    text-align: right;
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: 800;
+    color: yellow;
+    text-transform: uppercase;
+}
