@@ -6,6 +6,7 @@
     </title>
 </head>
 <link rel="stylesheet" href="/game.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
 <body>
     <section>
@@ -16,7 +17,7 @@
         </span>
     </section>
     <form method="POST">
-        <div class="step" style="display:block;">
+        <div class="step" id="first">
             <span>
                 Q1)World Health day is observed on?
             </span> <br><input type="radio" name="radioone" class="option" value="3">[A] 3rd April <br>
@@ -24,6 +25,10 @@
             <input type="radio" name="radioone" class="option" value="5">[C] 5th April <br>
             <input type="radio" name="radioone" class="option" value="7">[D] 7th April<br>
             <br>
+            <section class="multioption">
+                <div class="next"><a href="#" class="nextop" onclick=next()>Next </a></div>
+                <div class="prev"><a href="#" class="nextop" onclick=prev()> Previous</a></div>
+            </section>
         </div>
         <div class="step" id="second">
             <span>
@@ -34,6 +39,11 @@
             <input type="radio" name="radiotwo" class="option" value="so">[C] Central Statistical Office <br>
             <input type="radio" name="radiotwo" class="option" value="mf">[D] Ministry of Finance<br>
             <br>
+            <section class="multioption">
+                <div class="next"><a href="#" class="nextop" onclick=next()>Next </a></div>
+                <div class="prev"><a href="#" class="nextop" onclick=prev()> Previous</a></div>
+            </section>
+
         </div>
         <div class="step" id="third">
             <span>
@@ -45,6 +55,11 @@
             <input type="radio" name="radiothree" class="option" value="33">[C] Article 33<br>
             <input type="radio" name="radiothree" class="option" value="34">[D] Article 34<br>
             <br>
+            <section class="multioption">
+                <div class="next"><a href="#" class="nextop" onclick=next()>Next </a></div>
+                <div class="prev"><a href="#" class="nextop" onclick=prev()> Previous</a></div>
+            </section>
+
         </div>
         <div class="step" id="fourth">
             <span>
@@ -55,6 +70,11 @@
             <input type="radio" name="radiofour" class="option" value="ms">[C] Madeline Slade <br>
             <input type="radio" name="radiofour" class="option" value="mc">[D] Margarate Cousins<br>
             <br>
+            <section class="multioption">
+                <div class="next"><a href="#" class="nextop" onclick=next()>Next </a></div>
+                <div class="prev"><a href="#" class="nextop" onclick=prev()> Previous</a></div>
+            </section>
+
         </div>
         <div class="step" id="fifth">
             <span>
@@ -66,6 +86,11 @@
             <input type="radio" name="radiofive" class="option" value="vd">[C] Vinod Dham<br>
             <input type="radio" name="radiofive" class="option" value="bp">[D] Biswamohan Pani<br>
             <br>
+            <section class="multioption">
+                <div class="next"><a href="#" class="nextop" onclick=next()>Next </a></div>
+                <div class="prev"><a href="#" class="nextop" onclick=prev()> Previous</a></div>
+            </section>
+
         </div>
         <div class="step" id="sixth">
             <span>
@@ -77,6 +102,11 @@
             <input type="radio" name="radiosix" class="option" value="v">[C] Varnasi <br>
             <input type="radio" name="radiosix" class="option" value="l">[D] Lucknow<br>
             <br>
+            <section class="multioption">
+                <div class="next"><a href="#" class="nextop" onclick=next()>Next </a></div>
+                <div class="prev"><a href="#" class="nextop" onclick=prev()> Previous</a></div>
+            </section>
+
         </div>
         <div class="step" id="seventh">
             <span>
@@ -87,6 +117,11 @@
             <input type="radio" name="radioseven" class="option" value="d">[C] Dhruva<br>
             <input type="radio" name="radioseven" class="option" value="k">[D] Kamini<br>
             <br>
+            <section class="multioption">
+                <div class="next"><a href="#" class="nextop" onclick=next()>Next </a></div>
+                <div class="prev"><a href="#" class="nextop" onclick=prev()> Previous</a></div>
+            </section>
+
         </div>
         <div class="step" id="eight">
             <span>
@@ -97,6 +132,11 @@
             <input type="radio" name="radioeight" class="option" value="c">[C] Champaran<br>
             <input type="radio" name="radioeight" class="option" value="s">[D] Sabarmati<br>
             <br>
+            <section class="multioption">
+                <div class="next"><a href="#" class="nextop" onclick=next()>Next </a></div>
+                <div class="prev"><a href="#" class="nextop" onclick=prev()> Previous</a></div>
+            </section>
+
         </div>
         <div class="step" id="ninth">
             <span>
@@ -108,6 +148,11 @@
             <input type="radio" name="radionine" class="option" value="y">[C] Yakshagana <br>
             <input type="radio" name="radionine" class="option" value="kk">[D] Kathkali<br>
             <br>
+            <section class="multioption">
+                <div class="next"><a href="#" class="nextop" onclick=next()>Next </a></div>
+                <div class="prev"><a href="#" class="nextop" onclick=prev()> Previous</a></div>
+            </section>
+
         </div>
         <div class="step" id="ten">
             <span>
@@ -118,7 +163,32 @@
             <input type="radio" name="radioten" class="option" value="f">[C] Finland <br>
             <input type="radio" name="radioten" class="option" value="e">[D] Estonia<br>
             <br>
+            <section class="multioption">
+                <div class="next"><a href="#" class="nextop" onclick=next()>Next </a></div>
+                <div class="prev"><a href="#" class="nextop" onclick=prev()> Previous</a></div>
+            </section>
         </div>
         <button type="submit" class="check" name="check" value="chk">Check</button>
     </form>
+    <script>
+        var a = document.getElementsByClassName("step");
+        console.log(a);
+        a[0].classList.add("display");
+        var i = 0;
+        var v;
+        function next() {
+            console.log(i);
+            i = i + 1;
+            v = i - 1;
+            a[i].classList.add("display");
+            a[v].classList.remove("display");
+        }
+        function prev() {
+            i = i - 1;
+            v = i + 1;
+            a[i].classList.add("display");
+            a[v].classList.remove("display");
+        }
+    </script>
+
 </body>
