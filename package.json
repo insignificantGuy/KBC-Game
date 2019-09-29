@@ -1,0 +1,19 @@
+{
+  "name": "kbc-game",
+  "version": "1.0.0",
+  "description": "an online quiz game made via HTML,CSS,NODE.JS",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insignificantGuy/KBC-Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/insignificantGuy/KBC-Game/issues"
+  },
+  "homepage": "https://github.com/insignificantGuy/KBC-Game#readme"
+}
