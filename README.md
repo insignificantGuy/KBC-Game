@@ -1,2 +1,2 @@
 # KBC-Game
-an online quiz game made via HTML,CSS,NODE.JS
+an online quiz game made via HTML,CSS,NODE.JS and JavaScript
